@@ -1,0 +1,166 @@
+\input texinfo   @c -*-texinfo-*-
+@c %**start of header
+@setfilename tellab_admin_manual.info
+@settitle TELLab System Administrator's Manual
+@c %**end of header
+
+@dircategory TELLab Sysadmin Manual
+@direntry
+* TELLab: (tellab).           The Experiential Learning Laboratory.
+@end direntry
+
+@paragraphindent 0
+
+@include version.texi
+
+@ifnothtml
+@copying
+@c Copyright © 2021 TELLab Team
+Copyright 2021 TELLab Team
+
+TELLab Sysadmin Manual for version @value{VERSION}, generated @value{UPDATED}
+
+@c @quotation
+@c Permission is granted to ...
+@c @end quotation
+
+@end copying
+@end ifnothtml
+
+@titlepage
+@title TELLab System Administrator's Manual
+@subtitle How to install and operate the TELLab system
+@author Jeff Mulligan & Sarah Kerns
+
+@c The following two commands
+@c start the copyright page.
+@page
+
+@include COPYING
+
+@vskip 0pt plus 1filll
+
+@c The NASA web page security scanner doesn't like web page
+@c comments that contain the string 'admin' !?
+
+@ifnothtml
+@insertcopying
+@end ifnothtml
+
+@end titlepage
+
+@c Output the table of the contents at the beginning.
+@contents
+@c If and when the manual gets too long,
+@c we have the option of using @shortcontents
+
+@ifnottex
+@node Top
+@top TELLab Sysadmin Manual
+
+This manual covers both legacy TELLab and TELLab2.
+
+@ifnothtml
+@insertcopying
+@end ifnothtml
+
+@end ifnottex
+
+@c changed Index to QuIPindex because of stupid OSX case confusion with index.html...
+
+@menu
+* Introduction          ::  How to use this manual
+* Sysadmin tasks        ::  Everything a sysadmin needs to do
+* Installation          ::  How to set up a new installation from scratch
+* Cloud platforms       ::  Cloud providers used by the TELLab Team
+* Installing software   ::  How to install all of the required components
+* Security              ::  How to protect your systems from the bad guys
+* Background basics     ::  A crash course for newcomers to *NIX
+* Index and Cross-reference             ::  Complete index
+* TLindex               ::  Complete index
+
+@end menu
+
+@c CHAPTER 1 - OVERVIEW
+
+@node Introduction
+@chapter What is TELLab?
+@cindex chapter, first
+
+QuIP stands for QUick Image Processing, and is also a reference
+to its scripting language which allows the user to implement
+a variety of useful operations with short fragments of script or "quips."
+
+@menu
+* History       ::  Some background about TELLab
+@end menu
+
+@node History
+@section History
+QuIP has been developed continously over a period
+of several decades, under a series of flavors of UNIX.
+The QuIP interpreter is a front end for a number of libraries;
+some of these are system libraries, such as X Windows and OpenGL
+for image display, and Motif for GUI widgets.  Other libraries
+are distributed as part of the QuIP package, and provide support
+for various specialized functions, including support for a variety
+of hardware devices, and psychophysical experimentation.
+It provides an environment for visual and numerical
+computing similar in functionality to Matlab and the like.
+
+
+@cindex index entry, another
+
+@c CHAPTER 2 - SYSADMIN TASKS
+@node Sysadmin tasks
+@chapter Sysadmin tasks
+The simplest way to interact with QuIP is via the command language.
+
+@menu
+* Certificate renewal   ::  Keeping the SSL certificates up-to-date
+* DNS service		::  How the outside world finds us
+* XSEDE hosting		::  Proposal process & schedule
+* AWS hosting           ::  Account details
+@end menu
+
+@node Certificate renewal
+@section Certificate renewal
+COntent goes here.
+
+@node DNS service
+@section DNS service
+COntent goes here.
+
+@node XSEDE hosting
+@section XSEDE hosting
+COntent goes here.
+
+@node AWS hosting
+@section AWS hosting
+COntent goes here.
+
+@node Installation
+@chapter Installation
+
+@node Cloud platforms
+@chapter Cloud platforms
+
+@node Installing software
+@chapter Installing software
+
+@node Security
+@chapter Security
+
+@node Background basics
+@chapter Background basics
+
+@node Index and Cross-reference
+@chapter Index and Cross-reference
+
+@node TLindex
+@unnumbered TLindex
+
+@printindex cp
+
+@bye
+
